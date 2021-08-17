@@ -9,18 +9,26 @@
       </div>
     </div>
     <div class="actions">
-      <div class="action" v-for="action in actions">
-        <a :href="action.link">
+      <div v-for="action in actions">
+        <a :href="action.link" class="action">
           <img :src="'/images/icons/' + action.icon" alt="" />
         </a>
+      </div>
+      <div></div>
+      <div>
+        <button class="theme-switcher" @click="toggleTheme()">
+          <img src="/images/icons/theme.svg" alt="" />
+        </button>
       </div>
     </div>
   </nav>
 </template>
 
 <script lang="ts" setup>
-import { __ } from "../assets/utils";
+import { useColorTheme, __ } from "../assets/utils";
 import { routes, actions } from "../assets/constants";
+
+const { toggleTheme } = useColorTheme();
 </script>
 
 <style lang="scss" scoped>
@@ -36,6 +44,7 @@ import { routes, actions } from "../assets/constants";
     @include themed() {
       background: t("logo");
     }
+
     background-repeat: no-repeat;
     width: 141px;
     height: 58px;
@@ -43,12 +52,27 @@ import { routes, actions } from "../assets/constants";
 
   .links {
     display: flex;
+    align-items: center;
     font-size: 1.3rem;
     gap: 2em;
   }
 
   .actions {
     display: flex;
+    align-items: center;
+
+    img {
+      @include themed() {
+        filter: t("invert");
+      }
+    }
+
+    .theme-switcher {
+      background: none;
+      border: none;
+      outline: none;
+      padding: 0;
+    }
   }
 }
 </style>

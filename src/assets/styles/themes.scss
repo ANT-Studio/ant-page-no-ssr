@@ -6,11 +6,13 @@ $themes: (
     logo: url("/images/Logo.svg"),
     text: $text--light,
     bg: $bg--light,
+    invert: $invert--light,
   ),
   dark: (
     logo: url("/images/LogoWhite.svg"),
     text: $text--dark,
     bg: $bg--dark,
+    invert: $invert--dark,
   ),
 );
 

@@ -1,4 +1,5 @@
 {
+  "test": "Witaj {whatToHello}!",
   "navbar": {
     "home": "Strona główna",
     "projects": "Projekty",

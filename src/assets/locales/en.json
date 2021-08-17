@@ -1,4 +1,5 @@
 {
+  "test": "Hello {whatToHello}!",
   "navbar": {
     "home": "Home",
     "projects": "Projects",

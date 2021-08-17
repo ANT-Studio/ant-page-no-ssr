@@ -11,6 +11,14 @@ export interface IAction {
   link: string;
 }
 
+export type ColorMode = "dark" | "light";
+
+export type ColorModeTheme = () => {
+  getTheme: () => Promise<ColorMode>;
+  setTheme: (theme: ColorMode) => void;
+  toggleTheme: () => void;
+};
+
 export type RecursiveKeyOf<TObj extends object> = {
   [TKey in keyof TObj & (string | number)]: RecursiveKeyOfHandleValue<
     TObj[TKey],
