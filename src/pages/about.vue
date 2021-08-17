@@ -1,14 +1,5 @@
 <template>
-  <h1>{{ msg }}</h1>
-  <button @click="changeMessage">Change me!</button>
+  <h1>Not found</h1>
 </template>
 
-<script lang="ts" setup>
-import { ref } from "vue";
-
-const msg = ref("Hi!");
-
-const changeMessage = () => {
-  msg.value = "Hi 2!";
-};
-</script>
+<script lang="ts" setup></script>

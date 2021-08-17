@@ -1,10 +1,5 @@
-<template>
-  <HelloWorld :msg="msg" />
-</template>
+<template>Home page</template>
 
 <script lang="ts" setup>
-import { ref } from "vue";
-import HelloWorld from "../components/HelloWorld.vue";
-
-const msg = ref("Hello again :D");
+import { __ } from "../assets/utils";
 </script>
