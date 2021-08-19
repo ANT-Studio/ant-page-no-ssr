@@ -6,13 +6,21 @@ $themes: (
     logo: url("/images/Logo.svg"),
     text: $text--light,
     bg: $bg--light,
+    secondary-bg: $secondary-bg--light,
+    secondary: $secondary--light,
     invert: $invert--light,
+    main-gradient: $main-gradient,
+    main-shadow: $main-shadow,
   ),
   dark: (
     logo: url("/images/LogoWhite.svg"),
     text: $text--dark,
     bg: $bg--dark,
+    secondary-bg: $secondary-bg--dark,
+    secondary: $secondary--dark,
     invert: $invert--dark,
+    main-gradient: $main-gradient,
+    main-shadow: $main-shadow,
   ),
 );
 

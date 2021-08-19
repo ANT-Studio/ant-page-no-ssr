@@ -34,6 +34,10 @@ onMounted(() => {
   padding: 0;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 #app {
   @include themed() {
     color: t("text");
@@ -42,10 +46,5 @@ onMounted(() => {
 
   min-width: 100vw;
   min-height: 100vh;
-
-  .app {
-    max-width: 80vw;
-    margin: 0 auto;
-  }
 }
 </style>

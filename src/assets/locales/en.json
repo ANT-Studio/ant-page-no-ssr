@@ -3,6 +3,7 @@
   "navbar": {
     "home": "Home",
     "projects": "Projects",
-    "about": "About us"
+    "about": "About us",
+    "contactUs": "Contact us"
   }
 }

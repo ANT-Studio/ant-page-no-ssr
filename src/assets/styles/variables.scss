@@ -1,8 +1,18 @@
-$bg--light: #fff;
-$bg--dark: #000;
+$secondary-bg--light: #fff;
+$secondary-bg--dark: #000;
+
+$bg--light: #f7f7f7;
+$bg--dark: #1a1a1a;
+
+$secondary--light: #fff;
+$secondary--dark: #313131;
 
 $text--light: #000;
 $text--dark: #fff;
 
 $invert--light: invert(1);
 $invert--dark: invert(0);
+
+$main-gradient: linear-gradient(94.82deg, #ff006b 0%, #aa0099 100%);
+
+$main-shadow: 0px 0px 50px rgba(0, 0, 0, 0.07);
