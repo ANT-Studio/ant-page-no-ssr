@@ -47,8 +47,8 @@ const { toggleTheme } = useColorTheme();
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 80vw;
-  margin: 0 auto;
+
+  @include sectionContainer();
 
   .logo {
     @include themed() {

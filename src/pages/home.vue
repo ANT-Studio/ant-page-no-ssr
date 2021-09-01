@@ -9,6 +9,7 @@
 <script lang="ts" setup>
 import { __ } from "../assets/utils";
 import Hero from "../components/Hero.vue";
+import TeamPreview from "../components/TeamPreview.vue";
 </script>
 
 <style lang="scss" scoped>

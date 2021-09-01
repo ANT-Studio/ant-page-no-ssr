@@ -5,5 +5,12 @@
     "projects": "Projects",
     "about": "About us",
     "contactUs": "Contact us"
+  },
+  "teamPreview": {
+    "title": "Meet out team.",
+    "subtitle": "Discover our skills. And personalities.",
+    "memberCard": {
+      "aboutUs": "About me"
+    }
   }
 }

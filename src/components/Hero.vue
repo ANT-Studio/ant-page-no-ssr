@@ -1,4 +1,3 @@
-<!--suppress ALL -->
 <template>
   <div class="hero">
     <div class="hero-wrapper">
@@ -37,14 +36,13 @@ import { __ } from "../assets/utils";
 
 .hero {
   width: 100vw;
-  min-height: 100vh;
-  z-index: 10;
-  margin-top: 7em;
+  /* FIXME: navbar height has to be calculated automatically */
+  min-height: calc(100vh - 90px);
   position: relative;
 
   .hero-wrapper {
-    margin: 0 auto;
-    width: 80vw;
+    @include sectionContainer();
+
     display: flex;
     justify-content: space-between;
     gap: 3em;
