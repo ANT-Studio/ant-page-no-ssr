@@ -14,6 +14,7 @@
         </div>
       </div>
       <div class="hero-image">
+        <!--suppress HtmlUnknownTarget -->
         <img src="/images/HeroImage.svg" alt="Hero Image" />
       </div>
     </div>
@@ -39,13 +40,17 @@ import { __ } from "../assets/utils";
   /* FIXME: navbar height has to be calculated automatically */
   min-height: calc(100vh - 90px);
   position: relative;
+  display: flex;
+  align-items: center;
 
   .hero-wrapper {
     @include sectionContainer();
 
     display: flex;
     justify-content: space-between;
-    gap: 3em;
+    align-items: center;
+    gap: 7em;
+
     .hero-content {
       word-break: keep-all;
 
@@ -101,28 +106,21 @@ import { __ } from "../assets/utils";
 
   .decoration {
     div {
-      @include themed() {
-        filter: t("invert");
-      }
+      @include decoration() {
+        &:first-child {
+          margin-left: -3em;
+          margin-top: 24em;
+          top: 0;
+          left: 0;
+        }
 
-      position: absolute;
-      width: 150px;
-      height: 300px;
-      background: url("/images/Grid.svg") no-repeat;
-
-      &:first-child {
-        margin-left: -3em;
-        margin-top: 24em;
-        top: 0;
-        left: 0;
-      }
-
-      &:last-child {
-        top: 0;
-        right: 0;
-        transform: rotate(90deg);
-        margin-right: -7em;
-        margin-top: -5em;
+        &:last-child {
+          top: 0;
+          right: 0;
+          transform: rotate(90deg);
+          margin-right: -7em;
+          margin-top: -5em;
+        }
       }
     }
   }

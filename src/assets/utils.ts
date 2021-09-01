@@ -7,6 +7,18 @@ export const __ = (key: TranslationKey, replace?: NamedValue<any>) => {
   return t(key, replace);
 };
 
+// FIXME: doesn't work in different file
+declare global {
+  interface String {
+    round(length?: number): string;
+  }
+}
+
+String.prototype.round = function (length: number = 100) {
+  const string = String(this);
+  return string.length > length ? string.substr(0, length) + "..." : string;
+};
+
 export const useColorTheme: ColorModeTheme = () => {
   const getTheme: () => Promise<ColorMode> = async () => {
     await new Promise((r) => setInterval(r, 1));
