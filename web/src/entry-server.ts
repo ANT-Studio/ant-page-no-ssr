@@ -8,8 +8,19 @@ export const render = async (url: string, manifest: Manifest) => {
   await router.push(url);
   await router.isReady();
 
-  const ctx: SSRContext = {};
-  const html = await renderToString(app, ctx);
+  const ctx: SSRContext = {
+    state: store.state,
+    rendered: () => state = store.state
+  };
+
+  const renderState = `
+   <script>
+    window.__INITIAL_STATE__ = ${JSON.stringify(store.state)}
+   </script>
+  `
+
+  let html = await renderToString(app, ctx);
+  html += renderState;
 
   const preloadLinks = renderPreloadLinks(ctx.modules, manifest);
   return [html, preloadLinks];

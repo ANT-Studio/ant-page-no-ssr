@@ -18,7 +18,8 @@
     "sass-loader": "^12.1.0",
     "vue": "^3.2.0",
     "vue-i18n": "^9.1.7",
-    "vue-router": "^4.0.11"
+    "vue-router": "^4.0.11",
+    "vuex": "^4.0.2"
   },
   "devDependencies": {
     "@types/express": "^4.17.13",
