@@ -27,13 +27,13 @@
 </template>
 
 <script lang="ts" setup>
-import { __ } from "../assets/utils";
+import { __ } from "../../assets/utils";
 </script>
 
 <!--suppress CssUnknownTarget -->
 <style lang="scss" scoped>
-@import "../assets/styles/themes";
-@import "../assets/styles/mixins";
+@import "../../assets/styles/themes";
+@import "../../assets/styles/mixins";
 
 .hero {
   width: 100vw;

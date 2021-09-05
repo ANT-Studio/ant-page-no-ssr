@@ -11,6 +11,14 @@
     "subtitle": "Discover our skills. And personalities.",
     "memberCard": {
       "aboutUs": "About me"
-    }
+    },
+    "readAllAboutUs": "Read all about us on dedicated",
+    "readAllAboutUsLink": "page."
+  },
+  "projects": {
+    "title": "Discover our projects.",
+    "subtitle": "Find our applications. And websites.",
+    "seeAllProjects": "See all of our projects",
+    "seeAllProjectsLink": "here."
   }
 }

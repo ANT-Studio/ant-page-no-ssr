@@ -36,3 +36,15 @@
 
   @content;
 }
+
+@mixin sectionTitle() {
+  h2 {
+    font-size: 3em;
+    font-weight: 900;
+    padding: 2em 0 1em;
+  }
+
+  p {
+    font-size: 1.5em;
+  }
+}

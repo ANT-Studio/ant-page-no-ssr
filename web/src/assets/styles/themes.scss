@@ -8,9 +8,11 @@ $themes: (
     bg: $bg--light,
     secondary-bg: $secondary-bg--light,
     secondary: $secondary--light,
+    secondary-gray: $secondary-gray--light,
+    secondary-gray-shadow: $secondary-gray-shadow--light,
     invert: $invert--light,
     main-gradient: $main-gradient,
-    main-shadow: $main-shadow,
+    main-shadow: $main-shadow--light,
   ),
   dark: (
     logo: url("/images/LogoWhite.svg"),
@@ -18,9 +20,11 @@ $themes: (
     bg: $bg--dark,
     secondary-bg: $secondary-bg--dark,
     secondary: $secondary--dark,
+    secondary-gray: $secondary-gray--dark,
+    secondary-gray-shadow: $secondary-gray-shadow--dark,
     invert: $invert--dark,
     main-gradient: $main-gradient,
-    main-shadow: $main-shadow,
+    main-shadow: $main-shadow--dark,
   ),
 );
 

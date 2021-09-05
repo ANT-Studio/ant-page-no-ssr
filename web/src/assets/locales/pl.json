@@ -11,6 +11,14 @@
     "subtitle": "Poznaj nasze umiejętności. Oraz osobowości.",
     "memberCard": {
       "aboutUs": "O mnie"
-    }
+    },
+    "readAllAboutUs": "Poczytaj o nas na dedykowanej",
+    "readAllAboutUsLink": "stronie."
+  },
+  "projects": {
+    "title": "Poznaj nasze projekty.",
+    "subtitle": "Znajdź nasze aplikacje. Oraz strony.",
+    "seeAllProjects": "Zobacz wszystkie nasze projekty",
+    "seeAllProjectsLink": "tutaj."
   }
 }
