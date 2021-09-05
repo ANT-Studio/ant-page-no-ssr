@@ -2,8 +2,8 @@ import { createApp } from "./main";
 import { renderToString, SSRContext } from "@vue/server-renderer";
 import { Manifest } from "vite";
 
-export const render = async (url: string, manifest: Manifest) => {
-  const { app, router } = createApp();
+export const render = async (url: string, manifest: Manifest, state: any) => {
+  const { app, router, store } = createApp();
 
   await router.push(url);
   await router.isReady();

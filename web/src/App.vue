@@ -10,14 +10,21 @@
 </template>
 
 <script lang="ts" setup>
-import { onMounted } from "vue";
+import {onMounted, onServerPrefetch} from "vue";
 import { useI18n } from "vue-i18n";
 import { DEFAULT_LOCALE } from "./assets/constants";
 import Navbar from "./components/Navbar.vue";
+import {useStore} from "vuex";
 
 const i18n = useI18n();
+const store = useStore();
+
+onServerPrefetch(() => {
+  return store.dispatch('increment')
+})
 
 onMounted(() => {
+  setInterval(() => console.log(store.state.count), 1000);
   i18n.locale.value = localStorage.getItem("lang") || DEFAULT_LOCALE;
   document.body.classList.add("theme");
   document.body.classList.add("theme--dark");

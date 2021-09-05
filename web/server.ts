@@ -58,7 +58,7 @@ async function createServer(
         render = (await vite.ssrLoadModule("/src/entry-server.ts")).render;
       } else {
         template = indexProd;
-        render = require("./dist/server/entry-server.ts").render;
+        render = require("./dist/server/entry-server.js").render;
       }
 
       const [appHtml, preloadLinks] = await render(url, manifest);
