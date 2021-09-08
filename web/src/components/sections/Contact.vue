@@ -38,6 +38,10 @@
         </div>
       </form>
     </div>
+    <div class="decoration">
+      <div />
+      <div />
+    </div>
   </div>
 </template>
 
@@ -50,6 +54,8 @@ import { __ } from "../../assets/utils";
 @import "../../assets/styles/variables";
 @import "../../assets/styles/themes";
 .contact {
+  position: relative;
+  overflow: hidden;
   @include themed() {
     background: t("secondary-bg");
   }
@@ -141,7 +147,7 @@ import { __ } from "../../assets/utils";
     input {
       @include themed() {
         background: t("text");
-        color: t("background");
+        color: t("bg");
         box-shadow: 10px 10px 0px $secondary-shadow;
       }
       transition: all 0.1s ease-in-out;
@@ -155,6 +161,25 @@ import { __ } from "../../assets/utils";
       &:hover {
         box-shadow: 5px 5px 0px $secondary-shadow;
         filter: invert(0.05);
+      }
+    }
+  }
+  .decoration {
+    div {
+      @include decoration() {
+        &:first-child {
+          top: 0;
+          right: 30%;
+          margin-top: -7em;
+          transform: rotate(90deg);
+        }
+
+        &:last-child {
+          bottom: 0;
+          left: 8%;
+          margin-bottom: -7em;
+          transform: rotate(90deg);
+        }
       }
     }
   }
