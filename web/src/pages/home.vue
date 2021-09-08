@@ -4,6 +4,7 @@
     <TeamPreview />
     <Projects />
     <Contact />
+    <Footer />
   </div>
 </template>
 
@@ -12,6 +13,7 @@ import Hero from "../components/sections/Hero.vue";
 import TeamPreview from "../components/sections/TeamPreview.vue";
 import Projects from "../components/sections/Projects.vue";
 import Contact from "../components/sections/Contact.vue";
+import Footer from "../components/sections/Footer.vue";
 </script>
 
 <style lang="scss" scoped></style>

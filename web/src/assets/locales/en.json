@@ -37,5 +37,10 @@
     "button": {
       "message": "Send the message."
     }
+  },
+  "footer": {
+    "description": "This is footer of our page! <br> Copyright &trade; AntProject 2021",
+    "ourDescription": "This page was fully <br>designed and created by",
+    "us": "us."
   }
 }
