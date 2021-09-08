@@ -20,5 +20,22 @@
     "subtitle": "Znajdź nasze aplikacje. Oraz strony.",
     "seeAllProjects": "Zobacz wszystkie nasze projekty",
     "seeAllProjectsLink": "tutaj."
+  },
+  "contact": {
+    "title": "Kontakt",
+    "subtitle": "Zbudujmy przyszłość razem!",
+    "label": {
+      "name": "Jak się nazywasz?",
+      "email": "Jaki jest twój email?",
+      "message": "Co chcesz nam przekazać?"
+    },
+    "placeholder": {
+      "name": "Wpisz tu swoje imię...",
+      "email": "Wpisz tu swój email...",
+      "message": "Wpisz tu swoją wiadomość"
+    },
+    "button": {
+      "message": "Wyślij wiadomość."
+    }
   }
 }

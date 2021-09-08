@@ -20,5 +20,22 @@
     "subtitle": "Find our applications. And websites.",
     "seeAllProjects": "See all of our projects",
     "seeAllProjectsLink": "here."
+  },
+  "contact": {
+    "title": "Contact us",
+    "subtitle": "Let's create the future together. Not yet though",
+    "label": {
+      "name": "What's your name?",
+      "email": "What's your email?",
+      "message": "What do you want to tell us?"
+    },
+    "placeholder": {
+      "name": "Entery your name...",
+      "email": "Enter your email...",
+      "message": "Enter your message..."
+    },
+    "button": {
+      "message": "Send the message."
+    }
   }
 }
